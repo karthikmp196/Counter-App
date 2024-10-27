@@ -15,20 +15,20 @@ function App() {
     setCounter(0)
   }
   return (
-    <div  style={{backgroundColor:'black',height:'20%'}} id='counter'>
+    <div  id='counter'>
        <div id='button' style={{height:'740px'}} >
         
           <div >
-            <button style={{width:40,height:40,borderRadius:10,}} id='MINUS' onClick={decrement}>-</button>
+            <button className='but' style={{width:40,height:40,borderRadius:10}} id='MINUS' onClick={decrement}>-</button>
           </div>
-          <h1 style={{fontSize:40,color:'white'}}>{counter}</h1>
+          <h1 style={{fontSize:40,color:'black'}}>{counter}</h1>
          <div >
-           <button style={{width:40,height:40,borderRadius:10}} id='PLUS' onClick={increment}>+</button>
+           <button className='but' style={{width:40,height:40,borderRadius:10}} id='PLUS' onClick={increment}>+</button>
          </div>
          
        </div>
        <div id='reset'>
-         <button  style={{width:60,height:40,borderRadius:10,marginBottom:20}} onClick={reset}> Reset</button>
+         <button className='but'  style={{width:60,height:40,borderRadius:10,marginBottom:20}} onClick={reset}> Reset</button>
       </div>   
     </div>
 
